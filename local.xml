@@ -10,6 +10,8 @@
 
      - name: just check if local is updated.
        action: command echo "Hello Ansible."
+     - name: commiting changes
+       shell: echo "Hello Ansible."
 
 
 

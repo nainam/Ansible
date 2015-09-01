@@ -1,0 +1,15 @@
+---
+# easy Ubuntu nginx playbook as an example.
+# this is a test for ec2 user-data  
+# local.yml is used for pull-based Ansible setup.
+
+- hosts: localhost 
+  sudo: True
+
+  tasks:
+
+     - name: just check if local is updated.
+       action: command echo "Hello Ansible."
+
+
+

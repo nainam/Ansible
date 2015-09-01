@@ -4,7 +4,7 @@
   vars:
    users:
     alice:
-      name: Alice Appleworth
+      name: Alice Applewort
       telephone: 123-456-7890
     bob:
       name: Bob Bananarama

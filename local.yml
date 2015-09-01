@@ -10,9 +10,11 @@
 
      - name: just check if local is updated.
        action: command echo "Hello Ansible."
+       register: output
+     - debug: msg= "{{ output }}"
      - name: commiting changes
        shell: echo "Hello Ansible"
      - name: Changes 
-       apt: pkg=monit state=present
+       apt: pkg=monit state=absent
 
 

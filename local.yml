@@ -1,18 +1,16 @@
 ---
-# easy Ubuntu nginx playbook as an example.
-# this is a test for ec2 user-data  
-# local.yml is used for pull-based Ansible setup.
-
-- hosts: localhost 
-  sudo: True
-
+- hosts: localhost
+  gather_facts: false
+  vars:
+   users:
+    alice:
+      name: Alice Appleworth
+      telephone: 123-456-7890
+    bob:
+      name: Bob Bananarama
+      telephone: 987-654-3210
   tasks:
-
-     - name: just check if local is updated.
-       shell: echo "Hello Ansible."
-       register: output
-     - debug: msg= "{{ output }}"
-     - name: commiting changes
-       shell: echo "Hello Ansible"
-
+  - name: Print phone records
+    debug: msg="User {{ item.key }} is {{ item.value.name }} ({{ item.value.telephone }})"
+    with_dict: "{{users}}"
 

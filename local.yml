@@ -12,7 +12,7 @@
        action: command echo "Hello Ansible."
      - name: commiting changes
        shell: echo "Hello Ansible"
-     - name: Changes
-       apt: pkg=nginx state=absent
+     - name: Changes 
+       apt: pkg=monit state=present
 
 

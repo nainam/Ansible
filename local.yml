@@ -5,10 +5,10 @@
    users:
     alice:
       name: Alice Applewort
-      telephone: 123-456-7890
+      telephone: 123-456-789
     bob:
       name: Bob Bananaraa
-      telephone: 987-654-3210
+      telephone: 987-654-321
   tasks:
   - name: Print phone records
     debug: msg="User {{ item.key }} is {{ item.value.name }} ({{ item.value.telephone }})"

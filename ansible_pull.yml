@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-  - name: Check ansible testing
+  - name: Check ansible 
     apt: pkg=ansible state=installed

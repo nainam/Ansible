@@ -1,0 +1,26 @@
+{
+  "ignition": {
+    "version": "2.0.0",
+    "config": {}
+  },
+  "storage": {},
+  "systemd": {
+    "units": [
+      {
+        "name": "etcd2.service",
+        "enable": true
+      }
+    ]
+  },
+  "networkd": {},
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "sshAuthorizedKeys": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEzDvxwY+AEiD+SDZLIGh2xcsiBilpMkeuUNlQoXyH47DrmAnnjyiLCdkUl/qRUZYCieJSiEZ9rtSfNojkbjGjHv82mODq+7TjdWl2UQnRd+uy9tE6xWI7c38G4Uk+PviiApF/8SlXVqS7ua2rd9e5k6Q7jFma6tu7eUhjCJy8qy19myCgllVvxiYuOSV5zo2iCHmIdR5pDtR0oAE6BaNV/k1TVVjccKJX1RvyXOpnfOXZfnIIADwq5FgzGlNk5GKfIwMXohyIZIBJNoxJUq7WHxDGU3VgehD2YA9XUlhFH/jmkADwnkosHXwxtNgJySpmhP4JvSuV3tkzEgmtkZxb naina.gupta@archiminion"
+        ]
+      }
+    ]
+  }
+}
